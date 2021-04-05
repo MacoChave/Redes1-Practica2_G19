@@ -75,6 +75,31 @@
   - Remote host: 10.8.0.3
   - Local Port: 40000
   - Remote Port: 30000
+
+- Server Contabilidad:
+  - IP: 192.168.119.80/26
+  - Gateway: 192.168.119.65
+  - VLAN: 20
+
+- Server Ventas:
+  - IP: 192.168.119.150/26
+  - Gateway: 192.168.119.129
+  - VLAN: 30
+
+- Server Informatica:
+  - IP: 192.168.119.151/26
+  - Gateway: 192.168.119.129
+  - VLAN: 30
+
+- Admin 1:
+  - IP: 192.168.119.6
+  - Gateway: 192.168.119.1
+  - VLAN: 10
+
+- Admin 2:
+  - IP: 192.168.119.7
+  - Gateway: 192.168.119.1
+  - VLAN: 10
 ### Configuración topología 2
 
 - UDP Tunnel topo3:
