@@ -74,6 +74,79 @@
 
 ### Configuración topología 2
 
+- UDP Tunnel topo3:
+  - Remote host: 10.8.0.2
+  - Local port: 30000
+  - Remote port: 20000
+
+- UDP Tunnel topo1:
+  - Remote host: 10.8.0.4
+  - Local port: 50000
+  - Remote port: 40000
+
+- Switch Capa 3 2:
+  - Port Channel 2 (f1/2 - 4): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30
+ 
+- Switch Capa 3 1:
+  - Port Channel 2 (f1/11 - 13): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30
+  
+- Switch Capa 1 4:
+  - Port Channel 3 (f1/5 - 7): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo server
+  - VLAN 10, 20 y 30
+  
+- Switch Capa 1 3:
+  - Port Channel 2 (f1/11 - 13): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo server
+  - VLAN 10, 20 y 30
+  
+- Switch Capa 1 2:
+  - Port Channel 1 (f1/0 - 1): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo server
+  - VLAN 10, 20 y 30
+  
+
+- Switch Capa 2 1:
+  - Port Channel 1 (f1/0 - 1): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30
+  
+- Switch Capa 2 4:
+  - Port Channel 1 (f1/8 - 10): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30
+  
+- Switch Capa 2 3:
+  - Port Channel 1 (f1/11 - 13): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30
+  
+- Switch Capa 4 1:
+  - Port Channel 1 (f1/5 - 7): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30
+
+- Switch Capa 4 2:
+  - Port Channel 1 (f1/8 - 10): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30  
+
+
+
 ### Configuración topología 3
 
 - UDP Tunnel:
