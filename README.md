@@ -71,7 +71,10 @@
 ## Configuración por dispositivo
 
 ### Configuración topología 1
-
+- UDP Tunnel topo 2:
+  - Remote host: 10.8.0.3
+  - Local Port: 40000
+  - Remote Port: 30000
 ### Configuración topología 2
 
 - UDP Tunnel topo3:
