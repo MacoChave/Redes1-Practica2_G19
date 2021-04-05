@@ -52,6 +52,7 @@
 ## Configuración de la topología de red en GNS3
 
 ### Red topología 1
+![Topo](https://user-images.githubusercontent.com/39930464/113613320-4b2ed100-960e-11eb-9d2f-f5772c9cd7f5.PNG)
 
 ### Red topología 2
 
