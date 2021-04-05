@@ -29,6 +29,11 @@
 ## Configuración de red multipunto
 
 ### Conexión topología 1
+![Ping1](https://user-images.githubusercontent.com/39930464/113614528-df4d6800-960f-11eb-8188-de170bc514e1.PNG)
+>Infomatica a Ventas
+
+![Ping2](https://user-images.githubusercontent.com/39930464/113614590-f0967480-960f-11eb-833c-e2810d4a3221.PNG)
+>Ventas a Informatica
 
 ### Conexión topología 2
 
