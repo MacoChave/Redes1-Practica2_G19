@@ -37,6 +37,8 @@
 
 ### Conexión topología 2
 
+![Topologia2](Res/topologia2.png)
+
 ### Conexión topología 3
 
 ![Cliente contabilidad 1](Res/ip_Conta1.png)
