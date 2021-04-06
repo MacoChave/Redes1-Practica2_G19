@@ -29,8 +29,15 @@
 ## Configuración de red multipunto
 
 ### Conexión topología 1
+![Ping1](https://user-images.githubusercontent.com/39930464/113614528-df4d6800-960f-11eb-8188-de170bc514e1.PNG)
+>Infomatica a Ventas
+
+![Ping2](https://user-images.githubusercontent.com/39930464/113614590-f0967480-960f-11eb-833c-e2810d4a3221.PNG)
+>Ventas a Informatica
 
 ### Conexión topología 2
+
+![Topologia2](Res/topologia2.png)
 
 ### Conexión topología 3
 
@@ -52,6 +59,7 @@
 ## Configuración de la topología de red en GNS3
 
 ### Red topología 1
+![Topo](https://user-images.githubusercontent.com/39930464/113613320-4b2ed100-960e-11eb-9d2f-f5772c9cd7f5.PNG)
 
 ### Red topología 2
 
@@ -63,8 +71,109 @@
 ## Configuración por dispositivo
 
 ### Configuración topología 1
+- UDP Tunnel topo 2:
+  - Remote host: 10.8.0.3
+  - Local Port: 40000
+  - Remote Port: 30000
 
+- Server Contabilidad:
+  - IP: 192.168.119.80/26
+  - Gateway: 192.168.119.65
+  - VLAN: 20
+
+- Server Ventas:
+  - IP: 192.168.119.150/26
+  - Gateway: 192.168.119.129
+  - VLAN: 30
+
+- Server Informatica:
+  - IP: 192.168.119.151/26
+  - Gateway: 192.168.119.129
+  - VLAN: 30
+
+- Admin 1:
+  - IP: 192.168.119.6
+  - Gateway: 192.168.119.1
+  - VLAN: 10
+
+- Admin 2:
+  - IP: 192.168.119.7
+  - Gateway: 192.168.119.1
+  - VLAN: 10
 ### Configuración topología 2
+
+- UDP Tunnel topo3:
+  - Remote host: 10.8.0.2
+  - Local port: 30000
+  - Remote port: 20000
+
+- UDP Tunnel topo1:
+  - Remote host: 10.8.0.4
+  - Local port: 50000
+  - Remote port: 40000
+
+- Switch Capa 3 2:
+  - Port Channel 2 (f1/2 - 4): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30
+ 
+- Switch Capa 3 1:
+  - Port Channel 2 (f1/11 - 13): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30
+  
+- Switch Capa 1 4:
+  - Port Channel 3 (f1/5 - 7): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo server
+  - VLAN 10, 20 y 30
+  
+- Switch Capa 1 3:
+  - Port Channel 2 (f1/11 - 13): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo server
+  - VLAN 10, 20 y 30
+  
+- Switch Capa 1 2:
+  - Port Channel 1 (f1/0 - 1): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo server
+  - VLAN 10, 20 y 30
+  
+
+- Switch Capa 2 1:
+  - Port Channel 1 (f1/0 - 1): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30
+  
+- Switch Capa 2 4:
+  - Port Channel 1 (f1/8 - 10): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30
+  
+- Switch Capa 2 3:
+  - Port Channel 1 (f1/11 - 13): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30
+  
+- Switch Capa 4 1:
+  - Port Channel 1 (f1/5 - 7): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30
+
+- Switch Capa 4 2:
+  - Port Channel 1 (f1/8 - 10): Modo troncal
+  - f1/15: Modo troncal
+  - VTP modo cliente
+  - VLAN 10, 20 y 30  
+
+
 
 ### Configuración topología 3
 
